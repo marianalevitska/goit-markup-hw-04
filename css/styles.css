@@ -301,6 +301,16 @@ button:hover {
   margin-top: 10px;
   text-align: center;
 }
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 /* ----------FOOTER------------ */
 footer {
