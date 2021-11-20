@@ -78,7 +78,10 @@ body {
 }
 
 .header-connect {
+  display: flex;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 .header-contacts:nth-of-type(1) {
   margin-right: 50px;
@@ -135,6 +138,18 @@ body {
   color: var(--accent-color);
 }
 
+.header-contacts {
+  display: flex;
+  margin-right: 30px;
+}
+.header-contacts:last-child {
+  margin-right: 0;
+}
+.social-icon {
+  fill: var(--second-text-color);
+  margin-right: 10px;
+  align-self: center;
+}
 /* ---------TITLE----- */
 
 h1 {
@@ -196,10 +211,12 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .points-list {
   display: flex;
+  flex-direction: row;
 }
 
 .points-item {
@@ -227,6 +244,22 @@ button:hover {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.benefits-item {
+  width: 270px;
+  height: 120px;
+  background-color: var(--bg-color-2);
+  margin-right: 30px;
+}
+
+.benefits-item:last-child {
+  margin-right: 0;
 }
 
 .products {
