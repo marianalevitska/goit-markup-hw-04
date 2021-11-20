@@ -138,6 +138,11 @@ body {
   color: var(--accent-color);
 }
 
+.header-contacts:hover .social-icon,
+.header-contacts :focus .social-icon {
+  fill: var(--accent-color);
+}
+
 .header-contacts {
   display: flex;
   margin-right: 30px;
@@ -248,18 +253,32 @@ button:hover {
 
 .benefits-list {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 30px;
 }
+
 .benefits-item {
   width: 270px;
   height: 120px;
-  background-color: var(--bg-color-2);
   margin-right: 30px;
+}
+
+.benefits-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color-2);
 }
 
 .benefits-item:last-child {
   margin-right: 0;
+}
+
+.benefits-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .products {
