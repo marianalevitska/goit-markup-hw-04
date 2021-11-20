@@ -3,6 +3,7 @@
   --second-text-color: #757575;
   --third-text-color: #ffffff;
   --mail-text-color: rgba(255, 255, 255, 0.6);
+  --social-icon-color: rgba(255, 255, 255, 0.1);
   --accent-color: #2196f3;
   --bg-color-1: #2f303a;
   --bg-color-2: #f5f4fa;
@@ -266,6 +267,7 @@ button:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
 }
 
 .h2 {
@@ -301,6 +303,28 @@ button:hover {
   margin-top: 10px;
   text-align: center;
 }
+
+.main-social-list {
+  display: flex;
+  justify-content: center;
+}
+.main-social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+.main-social {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  background-color: var(--third-text-color);
+}
+
+.main-social-item:last-child {
+  margin-right: 0;
+}
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -313,7 +337,20 @@ button:hover {
 }
 
 /* ----------FOOTER------------ */
-footer {
+.footer-full {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.container-1 {
+  width: 500px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer {
   background-color: var(--bg-color-1);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -362,7 +399,42 @@ footer {
   letter-spacing: 0.03em;
   color: var(--mail-text-color);
 }
+.h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  margin-bottom: 20px;
+}
+.social {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.footer-social {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  background-color: var(--social-icon-color);
+}
 
+.footer-social-item:last-child {
+  margin-right: 0;
+}
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11 */
 
 :root {
@@ -370,6 +442,7 @@ footer {
   --second-text-color: #757575;
   --third-text-color: #ffffff;
   --mail-text-color: rgba(255, 255, 255, 0.6);
+  --social-icon-color: rgba(255, 255, 255, 0.1);
   --first-button-color: #f5f4fa;
   --second-button-color: #2196f3;
   --accent-color: #2196f3;
