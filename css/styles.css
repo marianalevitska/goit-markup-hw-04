@@ -298,6 +298,10 @@ button:hover {
 .products-item {
   margin-right: 30px;
 }
+
+.products-item:last-child {
+  margin-right: 0;
+}
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
