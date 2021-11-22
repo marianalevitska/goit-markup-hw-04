@@ -122,19 +122,21 @@ body {
   color: var(--accent-color);
 }
 .header-contacts {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  align-items: center;
 }
 .header-contacts:hover,
-.header-contacts :focus {
+.header-contacts:focus {
   color: var(--accent-color);
 }
 
 .header-contacts:hover .social-icon,
-.header-contacts :focus .social-icon {
+.header-contacts:focus .social-icon {
   fill: var(--accent-color);
 }
 
@@ -441,13 +443,14 @@ button:hover {
 .clients-link:focus {
   border: 1px solid var(--accent-color);
 }
-.clients-icon {
-  fill: var(--icon-first-color);
-}
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
+}
+
+.clients-icon {
+  fill: var(--icon-first-color);
 }
 
 /* ----------FOOTER------------ */
@@ -548,7 +551,7 @@ button:hover {
   background-color: var(--social-icon-color);
 }
 .footer-social-icon {
-  fill: var(--icon-first-color);
+  fill: var(--third-text-color);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -591,10 +594,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-button {
-  cursor: pointer;
-}
-
 button {
   cursor: pointer;
 }
@@ -716,7 +715,6 @@ address {
 .social-icon {
   fill: var(--second-text-color);
   margin-right: 10px;
-  align-self: center;
 }
 
 /* -----------MAIN------------ */
@@ -750,7 +748,8 @@ address {
   margin-right: 8px;
 }
 .kinds-btn:hover,
-.kinds-btn:active {
+.kinds-btn:active,
+.kinds-btn:focus {
   color: var(--third-text-color);
 }
 
@@ -789,7 +788,8 @@ address {
 }
 
 button:active,
-button:hover {
+button:hover,
+button:focus {
   cursor: pointer;
   background: var(--second-button-color);
 }
@@ -913,7 +913,7 @@ footer {
   background-color: var(--social-icon-color);
 }
 .footer-social-icon {
-  fill: var(--icon-first-color);
+  fill: var(--third-text-color);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
